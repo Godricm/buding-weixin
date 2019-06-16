@@ -1,0 +1,16 @@
+logging:
+  level:
+    org.springframework.web: INFO
+    org.buding.weixin: DEBUG
+    me.chanjar.weixin: DEBUG
+wx:
+  mp:
+    configs:
+      - appId: wx4bc99231e751c2b1 #（一个公众号的appid）
+        secret: 6c3017634d5aa60dfe7d423e85102880#（公众号的appsecret）
+        token: 1qaz2wsx #（接口配置里的Token值）
+        aesKey:  #（接口配置里的EncodingAESKey值）
+      #- appId: 2222 （另一个公众号的appid，以下同上）
+      #  secret: 1111
+      #  token: 111
+      #  aesKey: 111
