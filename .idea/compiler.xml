@@ -8,14 +8,19 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="buding-weinxin" />
+        <module name="buding-mbg" />
+        <module name="buding-common" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="buding-common" target="1.5" />
+      <module name="buding-mbg" target="1.8" />
       <module name="buding-weinxin" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="buding-mbg" options="-parameters" />
       <module name="buding-weinxin" options="-parameters" />
     </option>
   </component>

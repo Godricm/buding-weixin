@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/buding.iml" filepath="$PROJECT_DIR$/buding.iml" />
+      <module fileurl="file://$PROJECT_DIR$/buding-common/buding-common.iml" filepath="$PROJECT_DIR$/buding-common/buding-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/buding-mbg/buding-mbg.iml" filepath="$PROJECT_DIR$/buding-mbg/buding-mbg.iml" />
       <module fileurl="file://$PROJECT_DIR$/buding-weinxin/buding-weinxin.iml" filepath="$PROJECT_DIR$/buding-weinxin/buding-weinxin.iml" />
     </modules>
   </component>

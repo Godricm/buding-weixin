@@ -4,6 +4,8 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/buding-weinxin/pom.xml" />
+        <option value="$PROJECT_DIR$/buding-common/pom.xml" />
+        <option value="$PROJECT_DIR$/buding-mbg/pom.xml" />
       </list>
     </option>
   </component>

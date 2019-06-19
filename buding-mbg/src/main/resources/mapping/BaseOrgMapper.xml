@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.buding.dao.BaseOrgMapper">
+  <resultMap id="BaseResultMap" type="org.buding.domain.BaseOrg">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="VARCHAR" property="id" />
+    <result column="code" jdbcType="VARCHAR" property="code" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="full_name" jdbcType="VARCHAR" property="fullName" />
+    <result column="short_name" jdbcType="VARCHAR" property="shortName" />
+    <result column="sort_code" jdbcType="VARCHAR" property="sortCode" />
+    <result column="parent_id" jdbcType="VARCHAR" property="parentId" />
+    <result column="level" jdbcType="VARCHAR" property="level" />
+    <result column="org_type" jdbcType="VARCHAR" property="orgType" />
+    <result column="leader" jdbcType="VARCHAR" property="leader" />
+    <result column="is_enabled" jdbcType="INTEGER" property="isEnabled" />
+    <result column="is_deleted" jdbcType="INTEGER" property="isDeleted" />
+    <result column="remark" jdbcType="VARCHAR" property="remark" />
+    <result column="created_time" jdbcType="TIMESTAMP" property="createdTime" />
+    <result column="created_by" jdbcType="VARCHAR" property="createdBy" />
+    <result column="modified_time" jdbcType="TIMESTAMP" property="modifiedTime" />
+    <result column="modified_by" jdbcType="VARCHAR" property="modifiedBy" />
+  </resultMap>
+</mapper>
