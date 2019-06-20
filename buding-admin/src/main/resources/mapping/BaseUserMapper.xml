@@ -20,4 +20,7 @@
     <result column="modified_by" jdbcType="VARCHAR" property="modifiedBy" />
     <result column="org_id" jdbcType="VARCHAR" property="orgId" />
   </resultMap>
+  <select id="loadByLoginName" resultMap="BaseResultMap">
+    select * from base_user where login_name=#{loginName}
+  </select>
 </mapper>
