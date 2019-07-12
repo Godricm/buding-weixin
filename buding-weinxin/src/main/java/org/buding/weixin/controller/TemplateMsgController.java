@@ -1,11 +1,14 @@
 package org.buding.weixin.controller;
 
 import lombok.AllArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import me.chanjar.weixin.common.error.WxErrorException;
 import me.chanjar.weixin.mp.api.WxMpService;
 import me.chanjar.weixin.mp.bean.template.WxMpTemplateData;
 import me.chanjar.weixin.mp.bean.template.WxMpTemplateMessage;
+import org.buding.weixin.config.TemplateMsgConfig;
 import org.buding.weixin.model.LinkCustomer;
+import org.buding.weixin.utils.JsonUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.*;
@@ -20,25 +23,23 @@ import org.springframework.web.bind.annotation.*;
  * \
  */
 @AllArgsConstructor
+@Slf4j
 @RestController
 @RequestMapping("/wx/templatemsg/{appid}")
 public class TemplateMsgController {
 
     private final WxMpService wxMpService;
 
-    //曹红林 olrN51FoZwcHtTnhKFVKBms-LWO4
-    //Godric olrN51Kx9apJ6jbo3_OTekiiMJNA
-    private final String OPEN_ID="oJzCD55ZOaSCmdyua5rRaTpysUUA";
-
-    private final String TEMP_ID="GIXQWewxlSmAhALcIAr9Ca5ulhXvhpz0H32aBqVvk44";
+    private final TemplateMsgConfig templateMsgConfig;
 
     @PostMapping("/sendMsg")
     public String sendTmpMsg(@PathVariable String appid,
                              @RequestBody LinkCustomer linkCustomer){
 
+        log.info(JsonUtils.toJson(linkCustomer));
         WxMpTemplateMessage templateMessage = WxMpTemplateMessage.builder()
-            .toUser(OPEN_ID)
-            .templateId(TEMP_ID)
+            .toUser(this.templateMsgConfig.getToUser())
+            .templateId(this.templateMsgConfig.getTmpId())
            // .url(url)
             .build();
         String linkTypeDesc="专车接送";

@@ -6,13 +6,12 @@
 wx:
   mp:
     configs:
-      - appId: wx5f87ffc9fff62bbb
-        secret: 631bc103253575511714b54be67a921f
-        token: caohonglin
-        aesKey: Fuqz7zv8MrTsUvup8AYnKt3rump2YDydkCQ5RUwVkvV
       - appId: wx4bc99231e751c2b1
         secret: 6c3017634d5aa60dfe7d423e85102880
         token: 1qaz2wsx
         aesKey:
+  templateMsg:
+    touser: oJzCD55ZOaSCmdyua5rRaTpysUUA
+    tmpid: GIXQWewxlSmAhALcIAr9Ca5ulhXvhpz0H32aBqVvk44
 server:
   port: 80
