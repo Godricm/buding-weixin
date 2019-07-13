@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/buding.iml" filepath="$PROJECT_DIR$/buding.iml" />
+      <module fileurl="file://$PROJECT_DIR$/buding-weinxin/buding.iml" filepath="$PROJECT_DIR$/buding-weinxin/buding.iml" />
+      <module fileurl="file://$PROJECT_DIR$/buding-admin/buding-admin.iml" filepath="$PROJECT_DIR$/buding-admin/buding-admin.iml" />
       <module fileurl="file://$PROJECT_DIR$/buding-admin/buding-admin.iml" filepath="$PROJECT_DIR$/buding-admin/buding-admin.iml" />
       <module fileurl="file://$PROJECT_DIR$/buding-common/buding-common.iml" filepath="$PROJECT_DIR$/buding-common/buding-common.iml" />
       <module fileurl="file://$PROJECT_DIR$/buding-weinxin/buding-weinxin.iml" filepath="$PROJECT_DIR$/buding-weinxin/buding-weinxin.iml" />

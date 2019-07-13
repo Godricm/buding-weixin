@@ -37,10 +37,11 @@ public class TemplateMsgController {
                              @RequestBody LinkCustomer linkCustomer){
 
         log.info(JsonUtils.toJson(linkCustomer));
+        //验证是否符合标准
         WxMpTemplateMessage templateMessage = WxMpTemplateMessage.builder()
             .toUser(this.templateMsgConfig.getToUser())
             .templateId(this.templateMsgConfig.getTmpId())
-           // .url(url)
+           .url("http://baidu.com")
             .build();
         String linkTypeDesc="专车接送";
         if(linkCustomer.getLinkType().equals("2")){
