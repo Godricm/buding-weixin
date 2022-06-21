@@ -21,7 +21,7 @@
         <mapper-version>2.1.5</mapper-version>
         <mapper-generator>1.1.5</mapper-generator>
         <pagehelper-version>1.2.12</pagehelper-version>
-        <mysql-connector>8.0.15</mysql-connector>
+        <mysql-connector>8.0.28</mysql-connector>
         <druid-version>1.1.17</druid-version>
     </properties>
 
